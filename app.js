@@ -107,3 +107,27 @@ if (foundValue == true) {
 }else {
     console.log("Did not find value");
 }
+
+// Exercise 5
+console.log("EXERCISE 5:\n==========\n");
+let fizzDivisor = Math.round(Math.random() * (10 - 1) + 1);
+let buzzDivisor = Math.round(Math.random() * (10 - 1) + 1);
+let n2 = Math.round(Math.random() * (1000 - 1) + 1);
+let start = Math.round(Math.random() * (10 - 1) + 1);
+
+for (let i = start; i <= n2; i++){
+    if (i % fizzDivisor == 0 && i % buzzDivisor == 0) {
+        
+        console.log(i , "FIZZBUZZ");
+    } else if (i % fizzDivisor == 0) {
+        
+        console.log(i , "FIZZ");
+        
+    }else if (i % buzzDivisor ==0){
+
+        console.log(i , "BUZZ");
+    }else {
+
+    }
+}
+
